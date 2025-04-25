@@ -3,9 +3,9 @@
 int main() {
 
     int x, y;
-    printf("x : ");
+    printf("x = ");
     scanf("%d", &x);
-    printf("y : ");
+    printf("y = ");
     scanf("%d", &y);
 
     int z;
@@ -14,8 +14,8 @@ int main() {
     x = z;
 
     printf("After swapping,\n");
-    printf("x : %d\n", x);
-    printf("y : %d\n", y);
+    printf("x = %d\n", x);
+    printf("y = %d\n", y);
 
     return 0;
 }
