@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-// prints series = 4,7,10,13,16... upto n terms
+// prints series = 4, 7, 10, 13, 16... upto n terms
 
 int main() {
 

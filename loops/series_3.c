@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-// prints series - 100,97,94,.. upto all terms which are positive
+// prints series - 100, 97, 94,.. upto all terms which are positive
 
 int main() {
 
