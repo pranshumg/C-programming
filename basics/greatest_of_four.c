@@ -62,20 +62,8 @@ int main() {
         } else {
             printf("%d is greatest\n", d);
         }
-    } else if (d >= a) {
-        if (d >= b) {
-            if (d >= c) {
-                printf("%d is greatest\n", d);
-            } else {
-                printf("%d is greatest\n", c);
-            }
-        } else if (b >= c) {
-            printf("%d is greatest\n", b);
-        } else {
-            printf("%d is greatest\n", c);
-        }
     } else {
-        printf("all the numbers are equal\n");
+        printf("%d is greatest\n", d);
     }
 
     return 0;
