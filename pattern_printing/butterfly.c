@@ -6,7 +6,7 @@ int main() {
     printf("Enter number = ");
     scanf("%d", &r);
 
-    int nsp = (2 * r) - 2; // nsp = no. of stars
+    int nsp = (2 * r) - 2; // nsp = no. of spaces
     int nst = 1; // nst = no. of stars
 
     for (int i = 1; i < r; i++) {
