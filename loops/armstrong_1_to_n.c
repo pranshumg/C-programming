@@ -3,38 +3,38 @@
 
 int main() {
 
-    int max_number;
+    int max;
     printf("Enter number = ");
-    scanf("%d", &max_number);
+    scanf("%d", &max);
 
-    int current_number = 1;
-    while (current_number <= max_number) {
-        int temp_current = current_number;
-        int digit_count = 0;
-    
+    int curr = 1;
+    while (curr <= max) {
+        int temp = curr;
+        int count = 0;
+
         // Count number of digits
-        while (temp_current > 0) {
-            digit_count++;
-            temp_current /= 10;
-        }
-    
-        temp_current = current_number;
-        int digit_value, sum_of_digit_powers = 0;
-    
-        // Calculate the sum of each digit raised to the power of digit_count
-        while (temp_current > 0) {
-            digit_value = temp_current % 10;
-            sum_of_digit_powers += pow(digit_value, digit_count);
-            temp_current /= 10;
-        }
-    
-        if (current_number == sum_of_digit_powers) {
-            printf("%d ", current_number);
+        while (temp > 0) {
+            count++;
+            temp /= 10;
         }
 
-        current_number++;
+        temp = curr;
+        int digit, sum_pow = 0;
+
+        // Calculate the sum of each digit raised to the power of count
+        while (temp > 0) {
+            digit = temp % 10;
+            sum_pow += pow(digit, count);
+            temp /= 10;
+        }
+
+        if (curr == sum_pow) {
+            printf("%d ", curr);
+        }
+
+        curr++;
     }
     printf("\n");
-    
+
     return 0;
 }

@@ -2,17 +2,17 @@
 
 int main() {
 
-    int num;
+    int n;
     printf("Enter number = ");
-    scanf("%d", &num);
+    scanf("%d", &n);
 
-    int digit_sum = 0;
-    while (num > 0) {
-        int last_digit = num % 10; 
-        digit_sum += last_digit;
-        num /= 10;
+    int sum = 0;
+    while (n > 0) {
+        int ld = n % 10;
+        sum += ld;
+        n /= 10;
     }
-    printf("Sum = %d\n", digit_sum);
-    
+    printf("Sum = %d\n", sum);
+
     return 0;
 }

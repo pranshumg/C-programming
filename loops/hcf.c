@@ -2,21 +2,21 @@
 
 int main()
 {
-	int num1, num2, hcf;
-	printf("Enter two numbers: ");
-	scanf("%d %d", &num1, &num2);
+    int n1, n2, h;
+    printf("Enter two numbers: ");
+    scanf("%d %d", &n1, &n2);
 
-	int original_num1 = num1, original_num2 = num2;
+    int o_n1 = n1, o_n2 = n2;
 
-	int min_value = num1 < num2 ? num1 : num2;
+    int min_val = n1 < n2 ? n1 : n2;
 
-	for (int i = 1; i <= min_value; i++) {
-		if (num1 % i == 0 && num2 % i == 0) {
-			hcf = i;
-		}
-	}
+    for (int i = 1; i <= min_val; i++) {
+        if (n1 % i == 0 && n2 % i == 0) {
+            h = i;
+        }
+    }
 
-	printf("HCF of %d and %d is %d\n", original_num1, original_num2, hcf);
+    printf("HCF of %d and %d is %d\n", o_n1, o_n2, h);
 
-	return 0;
+    return 0;
 }

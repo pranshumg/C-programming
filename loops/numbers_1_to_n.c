@@ -11,7 +11,6 @@ int main() {
     // prints numbers 1 to n
     // method 1
 
-
     for (i = 1; i <= n; i++) {
         printf("%d ", i);
     }

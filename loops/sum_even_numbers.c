@@ -22,5 +22,6 @@ int main() {
 
     int s = n * (n + 1); // s = sum
     printf("sum = %d\n", s);
+    
     return 0;
 }

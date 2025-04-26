@@ -2,24 +2,24 @@
 
 int main() {
 
-    int num;
+    int n;
     printf("Enter number = ");
-    scanf("%d", &num);
+    scanf("%d", &n);
 
-    int is_composite = 0;
-    for (int divisor = 2; divisor <= num - 1; divisor++) {
-        if (num % divisor == 0) {
-            is_composite = 1;
+    int comp = 0;
+    for (int d = 2; d <= n - 1; d++) {
+        if (n % d == 0) {
+            comp = 1;
             break;
         }
     }
 
-    if (num == 1) {
-        printf("%d is neither a prime nor a composite number\n", num);
-    } else if (is_composite == 0) {
-        printf("%d is a prime number\n", num);
+    if (n == 1) {
+        printf("%d is neither a prime nor a composite number\n", n);
+    } else if (comp == 0) {
+        printf("%d is a prime number\n", n);
     } else {
-        printf("%d is a composite number\n", num);
+        printf("%d is a composite number\n", n);
     }
 
     return 0;

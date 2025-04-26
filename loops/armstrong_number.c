@@ -5,33 +5,33 @@
 
 int main() {
 
-    int number;
+    int num;
     printf("Enter number = ");
-    scanf("%d", &number);
+    scanf("%d", &num);
 
-    int temp_number = number;
-    int digit_count = 0;
+    int temp = num;
+    int count = 0;
 
     // Count number of digits
-    while (temp_number > 0) {
-        digit_count++;
-        temp_number /= 10;
+    while (temp > 0) {
+        count++;
+        temp /= 10;
     }
 
-    temp_number = number;
-    int digit, sum_of_powers = 0;
+    temp = num;
+    int dig, sum_pow = 0;
 
-    // Calculate the sum of each digit raised to the power of digit_count
-    while (temp_number > 0) {
-        digit = temp_number % 10;
-        sum_of_powers += pow(digit, digit_count);
-        temp_number /= 10;
+    // Calculate the sum of each digit raised to the power of count
+    while (temp > 0) {
+        dig = temp % 10;
+        sum_pow += pow(dig, count);
+        temp /= 10;
     }
 
-    if (number == sum_of_powers) {
-        printf("%d is an Armstrong number\n", number);
+    if (num == sum_pow) {
+        printf("%d is an Armstrong number\n", num);
     } else {
-        printf("%d is not an Armstrong number\n", number);
+        printf("%d is not an Armstrong number\n", num);
     }
 
     return 0;
