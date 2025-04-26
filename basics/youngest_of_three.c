@@ -10,13 +10,13 @@ int main() {
     printf("enter 3rd person age = ");
     scanf("%d", &c);
 
-    if (a < b && a < c) {
+    if (a <= b && a <= c) {
         printf("1st person is the youngest\n");
-    } else if (b < a && b < c) {
+    } else if (b <= a && b <= c) {
         printf("2nd person is the youngest\n");
     } else {
         printf("3rd person is the youngest\n");
-    }
+    } 
 
     return 0;
 }

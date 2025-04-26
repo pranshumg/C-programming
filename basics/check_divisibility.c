@@ -9,7 +9,7 @@ int main() {
     scanf("%d", &n);
 
     if (m % n == 0) {
-        printf("%d is divisible by %d", m, n);
+        printf("%d is divisible by %d\n", m, n);
     } else {
         printf("%d is not divisible by %d\n", m, n);
     }

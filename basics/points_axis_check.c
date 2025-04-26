@@ -14,7 +14,7 @@ int main() {
         printf("(%d,%d) lies on y - axis\n", x, y);
     } else if (x == 0 && y == 0) {
         printf("(%d,%d) lies on origin\n", x, y);
-    } else{
+    } else {
         printf("(%d,%d)", x, y);
     }
 
