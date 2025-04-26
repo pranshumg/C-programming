@@ -20,7 +20,7 @@ int main() {
 
     // Method 2
 
-    int s = n * (n + 1);
+    int s = n * (n + 1); // s = sum
     printf("sum = %d\n", s);
     return 0;
 }
