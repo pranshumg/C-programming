@@ -1,7 +1,5 @@
 #include <stdio.h>
 
-float average(float, float, float);
-
 float average(float a, float b, float c) {
 
 	return (a + b + c) / 3;
