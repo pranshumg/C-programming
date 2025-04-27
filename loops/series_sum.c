@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-// prints sum of series - 1 - 2 + 3 - 4 + 5,.. upto n
+// prints sum of series = 1 - 2 + 3 - 4 + 5,.. upto n
 
 int main() {
 
