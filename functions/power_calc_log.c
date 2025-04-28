@@ -5,7 +5,7 @@ int power_log(int a, int b) {
 	if (b == 0) {
 		return 1;
 	}
-	int c = powlog(a, b / 2);
+	int c = power_log(a, b / 2);
 	if (b % 2 == 0) {
 		return c * c;
 	} else {
@@ -21,7 +21,7 @@ int main() {
 	printf("enter exponent = ");
 	scanf("%d", &b);
 
-	printf("%d raised to the power %d = %d\n", a, b, powlog(a, b));
+	printf("%d raised to the power %d = %d\n", a, b, power_log(a, b));
 
 	return 0;
 }
