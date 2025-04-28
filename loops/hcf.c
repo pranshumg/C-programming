@@ -16,7 +16,7 @@ int main()
         }
     }
 
-    printf("HCF of %d and %d is %d\n", og_n1, og_n2, hcf);
+    printf("HCF of %d and %d = %d\n", og_n1, og_n2, hcf);
 
     return 0;
 }
