@@ -19,7 +19,6 @@ int maze(int cr, int cc, int er, int ec) {
 
 	int tw = rw + dw;
 	return tw;
-
 }
 
 int main() {
@@ -33,5 +32,4 @@ int main() {
 	printf("no. of ways to reach from (1, 1) to (%d, %d) = %d\n", r, c, maze(1, 1, r, c));
 
 	return 0;
-
 }

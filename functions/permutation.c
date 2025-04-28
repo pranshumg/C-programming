@@ -7,7 +7,6 @@ int fact(int n) {
 	} else {
 		return n * fact(n - 1);
 	}
-	
 }
 
 void perm(int n, int r) {
@@ -18,7 +17,6 @@ void perm(int n, int r) {
 		int nPr = fact(n) / fact(n - r);
 		printf("nPr with n = %d and r = %d = %d\n", n, r, nPr);
 	}
-
 }
 
 int main() {
@@ -32,5 +30,4 @@ int main() {
 	perm(n, r);
 
 	return 0;
-
 }

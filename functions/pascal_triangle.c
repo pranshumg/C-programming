@@ -7,7 +7,6 @@ int fact(int n) {
 	} else {
 		return n * fact(n - 1);
 	}
-
 }
 
 int comb(int n, int r) {
@@ -15,7 +14,6 @@ int comb(int n, int r) {
 	int nCr = fact(n) / (fact(r) * fact(n - r));
 	printf("%d ", nCr);
 	return nCr;
-
 }
 
 int main() {
@@ -35,5 +33,4 @@ int main() {
 	}
 
 	return 0;
-	
 }

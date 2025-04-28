@@ -3,19 +3,16 @@
 void good_morning() {
 
 	printf("good morning\n");
-
 }
 
 void good_afternoon() {
 
 	printf("good afternoon\n");
-
 }
 
 void good_night() {
 
 	printf("good night\n");
-
 }
 
 int main() {
@@ -25,5 +22,4 @@ int main() {
 	good_night();
 
 	return 0;
-
 }

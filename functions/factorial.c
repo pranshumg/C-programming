@@ -7,7 +7,6 @@ int fact(int n) {
 	} else {
 		return n * fact(n - 1);
 	}
-
 }
 
 int main() {
@@ -19,5 +18,4 @@ int main() {
 	printf("factorial of %d = %d\n", n, fact(n));
 
 	return 0;
-	
 }

@@ -17,7 +17,6 @@ void prime_factors(int n) {
     if (n > 2) {
         printf("%d", n);
     }
-
 }
 
 
@@ -31,5 +30,4 @@ int main() {
 	printf("\n");
 
 	return 0;
-	
 }

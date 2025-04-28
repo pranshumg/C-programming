@@ -8,7 +8,6 @@ void print_n_to_1(int n) {
 		printf("%d ", n);
 		return print_n_to_1(n - 1);
 	}
-
 }
 
 int main() {

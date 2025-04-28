@@ -7,7 +7,6 @@ int power(int a, int b) {
 	} else {
 		return a * power(a, b - 1);
 	}
-
 }
 
 int main() {

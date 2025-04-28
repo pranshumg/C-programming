@@ -11,9 +11,7 @@ void HCF(int n1, int n2) {
             hcf = i;
         }
     }
-
     printf("HCF of %d and %d = %d\n", og_n1, og_n2, hcf);
-
 }
 
 int main() {
@@ -27,5 +25,4 @@ int main() {
 	HCF(n1, n2);
 
 	return 0;
-
 }

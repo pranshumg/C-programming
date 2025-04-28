@@ -4,7 +4,6 @@ void cel_to_fahr(float cel) {
 
 	float fahr = (cel * (9.0 / 5)) + 32;
 	printf("%.2f in fahrenheit = %.2f\n", cel, fahr);
-
 }
 
 int main() {

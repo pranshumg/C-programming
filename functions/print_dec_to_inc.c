@@ -9,7 +9,6 @@ void dec_to_inc(int n) {
 		dec_to_inc(n - 1);
 		printf("%d ", n);
 	}
-
 }
 
 int main() {

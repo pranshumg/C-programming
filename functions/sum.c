@@ -4,7 +4,6 @@ int sum(int x, int y) {
 
 	printf("%d + %d = %d\n", x, y, x + y);
 	return x + y;
-
 }
 
 int main() {
@@ -17,6 +16,5 @@ int main() {
 
 	sum(x, y);
 
-	return 0;
-	
+	return 0;	
 }
