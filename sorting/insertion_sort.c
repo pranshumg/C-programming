@@ -25,12 +25,12 @@ int main() {
 	int arr[] = {4, 1, 5, 2, 3};
 	int size = sizeof(arr) / sizeof(int);
 
-	printf("original array : ");
+	printf("original array = ");
 	traverse(arr, size);
 
 	insertion_sort(arr, size);
 
-	printf("sorted array : ");
+	printf("sorted array = ");
 	traverse(arr, size);
 
 	return 0;

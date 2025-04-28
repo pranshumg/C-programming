@@ -8,17 +8,23 @@ void traverse(int arr[], int size) {
 	printf("\n");
 }
 
-void bubble_sort(int arr[], int size) {
+void swap(int *a, int *b) {
 
-	int temp;
-	for (int j = 0; j < size - 1; j++) {
-		for (int k = 0; k < size - j - 1; k++) {
-			if (arr[k] > arr[k + 1]) {
-				temp = arr[k];
-				arr[k] = arr[k + 1];
-				arr[k + 1] = temp;
+	int temp = *a;
+	*a = *b;
+	*b = temp;
+}
+
+void selection_sort(int arr[], int size) {
+
+	for (int i = 0; i < size - 1; i++) {
+		int smallest_index = i;
+		for (int j = i + 1; j < size; j++) {
+			if (arr[j] < arr[smallest_index]) {
+				smallest_index = j;
 			}
 		}
+		swap(&arr[i], &arr[smallest_index]);
 	}
 }
 
@@ -30,7 +36,7 @@ int main() {
 	printf("original array = ");
 	traverse(arr, size);
 
-	bubble_sort(arr, size);
+	selection_sort(arr, size);
 
 	printf("sorted array = ");
 	traverse(arr, size);
