@@ -19,4 +19,5 @@ int main() {
 	printf("factorial of %d = %d\n", n, fact(n));
 
 	return 0;
+	
 }
