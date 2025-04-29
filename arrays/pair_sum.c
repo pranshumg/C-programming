@@ -25,8 +25,16 @@ void pair_sum(int arr[], int size) {
 }
 
 int main() {
-	int arr[] = {2, 4, 1, 0, 7, 5, 9};
-	int size = sizeof(arr) / sizeof(int);
+	int arr[100]; 
+    int size;
+
+    printf("Enter the number of elements =  ");
+    scanf("%d", &size);
+
+    printf("Enter %d elements = \n", size);
+    for (int i = 0; i < size; i++) {
+        scanf("%d", &arr[i]);
+    }
 
 	printf("array = ");
 	traverse(arr, size);
