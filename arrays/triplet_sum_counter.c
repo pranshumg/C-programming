@@ -8,6 +8,26 @@ void traverse(int arr[], int size) {
 	printf("\n");
 }
 
+void triplet_sum(int arr[], int size) {
+
+	int count = 0, num;
+	printf("Enter number to find triplets with sum equal to it = ");
+	scanf("%d", &num);
+
+	for (int i = 0; i < size; i++) {
+		for (int j = i + 1; j < size; j++) {
+			for (int k = j + 1; k < size; k++) {
+				if (arr[i] + arr[j] + arr[k] == num) {
+					count++;
+					printf("(%d, %d, %d)\n", arr[i], arr[j], arr[k]);
+				}
+			}
+		}
+	}
+
+	printf("total triplets = %d\n", count);
+}
+
 int main() {
 	
 	int arr[] = {2, 4, 1, 0, 7, 5, 9}, num;
@@ -16,23 +36,7 @@ int main() {
 	printf("array = ");
 	traverse(arr, size);
 	
-	printf("Enter number to find triplets with sum equal to it = ");
-	scanf("%d", &num);
-
-	int count = 0;
-
-	for (int j = 0; j < size; j++) {
-		for (int k = j + 1; k < size; k++) {
-			for (int l = k + 1; l < size; l++) {
-				if (arr[j] + arr[k] + arr[l] == num) {
-					count++;
-					printf("(%d, %d, %d)\n", arr[j], arr[k], arr[l]);
-				}
-			}
-		}
-	}
-
-	printf("total triplets = %d\n", count);
-
+	triplet_sum(arr, size);
+	
 	return 0;
 }
