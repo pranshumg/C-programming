@@ -24,15 +24,14 @@ int product_of_elements(int arr[], int size) {
 }
 
 int main() {
-    int arr[100]; 
-    int size;
+    int arr[100], size;
 
-    printf("Enter the number of elements = ");
-    scanf("%d", &size);
+    printf("enter the no. of elements = ");
+    scanf("%d", size);
 
-    printf("Enter %d elements = \n", size);
+    printf("enter %d elements = \n", size);
     for (int i = 0; i < size; i++) {
-        scanf("%d", &arr[i]);
+	    scanf("%d", &arr[i]);
     }
 
     printf("array = ");
