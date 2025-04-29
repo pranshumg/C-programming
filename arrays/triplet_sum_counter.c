@@ -1,7 +1,6 @@
 #include <stdio.h>
 
 void traverse(int arr[], int size) {
-
 	for (int i = 0; i < size; i++) {
 		printf("%d ", arr[i]);
 	}
@@ -9,7 +8,6 @@ void traverse(int arr[], int size) {
 }
 
 void triplet_sum(int arr[], int size) {
-
 	int count = 0, num;
 	printf("Enter number to find triplets with sum equal to it = ");
 	scanf("%d", &num);
@@ -29,14 +27,21 @@ void triplet_sum(int arr[], int size) {
 }
 
 int main() {
-	
-	int arr[] = {2, 4, 1, 0, 7, 5, 9}, num;
-	int size = sizeof(arr) / sizeof(int);
+	int arr[100]; 
+    int size;
+
+    printf("Enter the number of elements = ");
+    scanf("%d", &size);
+
+    printf("Enter %d elements = \n", size);
+    for (int i = 0; i < size; i++) {
+        scanf("%d", &arr[i]);
+    }
 	
 	printf("array = ");
 	traverse(arr, size);
 	
 	triplet_sum(arr, size);
-	
+
 	return 0;
 }
