@@ -1,7 +1,6 @@
 #include <stdio.h>
 
 void traverse(int arr[], int size) {
-
 	for (int i = 0; i < size; i++) {
 		printf("%d ", arr[i]);
 	}
@@ -9,7 +8,6 @@ void traverse(int arr[], int size) {
 }
 
 int sum_of_elements(int arr[], int size) {
-
     int sum = 0;
     for (int i = 0; i < size; i++) {
         sum += arr[i];
@@ -18,9 +16,16 @@ int sum_of_elements(int arr[], int size) {
 }
 
 int main() {
+	int arr[100];
+    int size;
 
-	int arr[] = {2, 4, 1, 0, 7, 5, 9};
-	int size = sizeof(arr) / sizeof(int);
+    printf("Enter the number of elements = ");
+    scanf("%d", &size);
+
+    printf("Enter %d elements = \n", size);
+    for (int i = 0; i < size; i++) {
+        scanf("%d", &arr[i]);
+    }
 	
 	printf("array = ");
 	traverse(arr, size);
