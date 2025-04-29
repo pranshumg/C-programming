@@ -19,7 +19,7 @@ int sum_of_elements(int arr[], int size) {
 
 int main() {
 
-	int arr[] = {2, 4, 1, 0, 7, 5, 9}, num;
+	int arr[] = {2, 4, 1, 0, 7, 5, 9};
 	int size = sizeof(arr) / sizeof(int);
 	
 	printf("array = ");
