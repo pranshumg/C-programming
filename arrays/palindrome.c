@@ -1,7 +1,6 @@
 #include <stdio.h>
 
 void traverse(int arr[], int size) {
-
 	for (int i = 0; i < size; i++) {
 		printf("%d ", arr[i]);
 	}
@@ -9,7 +8,6 @@ void traverse(int arr[], int size) {
 }
 
 void palindrome(int arr[], int size) {
-
 	int brr[size];
 	int i = 0, j = size - 1;
 	while (j >= 0) {
@@ -38,9 +36,16 @@ void palindrome(int arr[], int size) {
 }
 
 int main() {
-	
-	int arr[] = {1, 2, 3, 4, 3, 2, 1};
-	int size = sizeof(arr) / sizeof(int);
+	int arr[100]; 
+    int size;
+
+    printf("Enter the number of elements =  ");
+    scanf("%d", &size);
+
+    printf("Enter %d elements = \n", size);
+    for (int i = 0; i < size; i++) {
+        scanf("%d", &arr[i]);
+    }
 	
 	printf("array = ");
 	traverse(arr, size);
