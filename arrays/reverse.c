@@ -1,7 +1,6 @@
 #include <stdio.h>
 
 void traverse(int arr[], int size) {
-
 	for (int i = 0; i < size; i++) {
 		printf("%d ", arr[i]);
 	}
@@ -9,7 +8,6 @@ void traverse(int arr[], int size) {
 }
 
 void reverse(int arr[], int size) {
-
 	int i = 0, j = size - 1;
 	while (i < j) {
 		int temp = arr[i];
@@ -21,9 +19,16 @@ void reverse(int arr[], int size) {
 }
 
 int main() {
+	int arr[100]; 
+    int size;
 
-	int arr[] = {4, 1, 5, 2, 3,};
-	int size = sizeof(arr) / sizeof(int);
+    printf("Enter the number of elements = ");
+    scanf("%d", &size);
+
+    printf("Enter %d elements = \n", size);
+    for (int i = 0; i < size; i++) {
+        scanf("%d", &arr[i]);
+    }
 
 	printf("array = ");
 	traverse(arr, size);
