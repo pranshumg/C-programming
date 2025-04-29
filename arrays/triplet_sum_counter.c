@@ -27,6 +27,7 @@ void triplet_sum(int arr[], int size) {
 }
 
 int main() {
+	
 	int arr[100]; 
     int size;
 
