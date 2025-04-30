@@ -30,8 +30,7 @@ void multiplication(int row1, int col1, int row2, int col2, int arr[row1][col1],
 	}
 }
 
-int main()
-{
+int main() {
 	int arr[10][10], brr[10][10], row1, col1, row2, col2;
 
 	printf("for matrix 1,\n");
