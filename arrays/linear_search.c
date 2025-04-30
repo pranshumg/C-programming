@@ -7,7 +7,7 @@ void display(int arr[], int size) {
     printf("\n");
 }
 
-int linearSearch(int arr[], int size, int target) {
+int linear_search(int arr[], int size, int target) {
     for (int i = 0; i < size; i++) {
         if (target == arr[i]) {
             return i;
@@ -27,7 +27,7 @@ int main() {
     printf("enter element you want to search = ");
     scanf("%d", &target);
 
-    printf("%d\n", linearSearch(arr, size, target));
+    printf("%d\n", linear_search(arr, size, target));
 
     return 0;
 }
