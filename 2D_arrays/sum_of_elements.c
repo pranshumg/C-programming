@@ -36,7 +36,7 @@ int main() {
 	scanf("%d", &col);
 	
 	input(row, col, arr);
-    printf("\nmatrix :- \n");
+    printf("\nmatrix :-\n");
 	display(row, col, arr);
 
 	printf("\nsum of elements = %d\n", sum_of_matrix(row, col, arr));
