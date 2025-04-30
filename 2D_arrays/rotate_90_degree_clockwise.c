@@ -18,7 +18,7 @@ void display(int row, int col, int arr[][col]) {
 	}
 }
 
-void rot_90_deg_cw(int row, int col, int arr[][col]) {
+void rotate_90_deg_cw(int row, int col, int arr[][col]) {
 	for (int i = 0; i < col; i++) {
 		for (int j = 1; j <= row; j++) {
 			printf("%d ", arr[row - j][i]);
@@ -39,7 +39,7 @@ int main() {
 	display(row, col, arr);
 
 	printf("\nafter rotating 90 degree clockwise, matrix :-\n");
-	rot_90_deg_cw(row, col, arr);
+	rotate_90_deg_cw(row, col, arr);
 
 	return 0;
 }
