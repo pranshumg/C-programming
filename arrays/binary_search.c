@@ -7,9 +7,12 @@ void traverse(int arr[], int size) {
     printf("\n");
 }
 
-int binary_search(int arr[], int size, int target) {
+int binary_search(int arr[], int size) {
+    int target;
+    printf("enter element you want to search = ");
+    scanf("%d", &target);
     int start = 0, end = size - 1;
-    while (start <= end) {  // fixed from < to <=
+    while (start <= end) {  
         int mid = (start + end) / 2;
         if (arr[mid] == target) {
             return mid;
@@ -29,11 +32,7 @@ int main() {
     printf("array = ");
     traverse(arr, size);
 
-    int target;
-    printf("enter element you want to search = ");
-    scanf("%d", &target);
-
-    int result = binary_search(arr, size, target);
+    int result = binary_search(arr, size);
     if (result != -1)
         printf("element found at index = %d\n", result);
     else

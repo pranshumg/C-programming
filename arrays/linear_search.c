@@ -7,7 +7,10 @@ void display(int arr[], int size) {
     printf("\n");
 }
 
-int linear_search(int arr[], int size, int target) {
+int linear_search(int arr[], int size) {
+    int target;
+    printf("enter element you want to search = ");
+    scanf("%d", &target);
     for (int i = 0; i < size; i++) {
         if (target == arr[i]) {
             return i;
@@ -23,11 +26,11 @@ int main() {
     printf("array = ");
     display(arr, size);
 
-    int target;
-    printf("enter element you want to search = ");
-    scanf("%d", &target);
-
-    printf("%d\n", linear_search(arr, size, target));
+    int result = linear_search(arr, size);
+    if (result != -1)
+        printf("element found at index = %d\n", result);
+    else
+        printf("element not found.\n");
 
     return 0;
 }
