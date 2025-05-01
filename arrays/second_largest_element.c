@@ -1,10 +1,17 @@
 #include <stdio.h>
 #include <limits.h>  // for INT_MIN
 
+void traverse(int arr[], int size) {
+    for (int i = 0; i < size; i++) {
+        printf("%d ", arr[i]);
+    }
+    printf("\n");
+}
+
 int main() {
     int arr[100], size, largest, sec_largest;
 
-    printf("Enter number of elements in the array: ");
+    printf("Enter number of elements in the array = ");
     scanf("%d", &size);
 
     if (size < 2) {
@@ -27,10 +34,13 @@ int main() {
         }
     }
 
+    printf("array = ");
+    traverse(arr, size);
+
     if (sec_largest == INT_MIN)
         printf("There is no second largest element (all elements may be equal).\n");
     else
-        printf("The second largest element is: %d\n", sec_largest);
+        printf("The second largest element is = %d\n", sec_largest);
 
     return 0;
 }
