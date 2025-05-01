@@ -1,14 +1,13 @@
 #include <stdio.h>
 
-int print_1_to_n(int n) {
+void print_1_to_n(int n) {
 
 	if (n == 0) {
-		return 0;
+		return;
 	} else {
 		print_1_to_n(n - 1);
 		printf("%d ", n);
 	}
-	return 0;
 }
 
 int main() {
