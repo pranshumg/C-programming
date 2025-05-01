@@ -19,7 +19,7 @@ int main() {
         return 1;
     }
 
-    printf("Enter %d elements:\n", size);
+    printf("Enter %d elements =\n", size);
     scanf("%d", &arr[0]);
     largest = arr[0];
     sec_largest = INT_MIN;
