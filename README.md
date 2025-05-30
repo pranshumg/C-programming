@@ -1,3 +1,3 @@
 # c-programs
 
-A collection of C programs covering fundamental concepts and problem-solving techniques.
+A collection of C programs covering fundamental concepts and problem-solving techniques
